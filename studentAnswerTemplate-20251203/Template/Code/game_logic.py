@@ -60,11 +60,11 @@ class Game21:
             self.deck = self.create_deck()
             random.shuffle(self.deck)
             self.deck_position = 0
+
+        # Return the next card and advance the pointer
         card = self.deck[self.deck_position]
         self.deck_position += 1
         return card
-
-    # HAND VALUES + ACE HANDLING
 
     def card_value(self, card):
         """
@@ -162,4 +162,3 @@ class Game21:
         if d_total > p_total:
             return "Dealer wins!"
         return "Push (tie)."
-

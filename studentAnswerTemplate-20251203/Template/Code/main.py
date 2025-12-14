@@ -73,7 +73,7 @@ class MainWindow(QMainWindow):
         self.feedbackLabel.setAttribute(Qt.WidgetAttribute.WA_TransparentForMouseEvents)
         tableLayout.addStretch()
 
-        table_path = asset_path('Assets', 'Tables', 'table_green.png.png')
+        table_path = asset_path('Assets', 'Tables', 'table_green.png')
         self.table_pix = None
         self.tableLabel = QLabel()
         self.tableLabel.setAlignment(Qt.AlignmentFlag.AlignCenter)
